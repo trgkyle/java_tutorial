@@ -1,0 +1,135 @@
+Wed May 06 21:08:55 ICT 2020 : Apache Derby Network Server - 10.14.2.0 - (1828579) started and ready to accept connections on port 1527
+----------------------------------------------------------------
+Wed May 06 21:08:56 ICT 2020:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0171-ea51-6784-00000cd3e64f 
+on database directory C:\Users\truonghdpk\Documents\Code mau Java\DataDb\sample with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@c387f44 
+Loaded from file:/C:/Users/truonghdpk/Documents/Code%20mau%20Java/db-derby-10.14.2.0-bin/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=14+36-1461
+user.dir=C:\Users\truonghdpk\Documents\Code mau Java\db-derby-10.14.2.0-bin
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=C:\Users\truonghdpk\Documents\Code mau Java\DataDb
+Database Class Loader started - derby.database.classpath=''
+Wed May 06 21:14:06 ICT 2020 Thread[DRDAConnThread_3,5,main] Cleanup action starting
+java.sql.SQLException: Database 'Demo_Derby' not found.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.newSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleDBNotFound(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Caused by: ERROR XJ004: Database 'Demo_Derby' not found.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	... 21 more
+============= begin nested exception, level (1) ===========
+ERROR XJ004: Database 'Demo_Derby' not found.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.newSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleDBNotFound(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:554)
+	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+============= end nested exception, level (1) ===========
+Cleanup action completed
+Wed May 06 21:14:06 ICT 2020 Thread[DRDAConnThread_3,5,main] (DATABASE = Demo_Derby), (DRDAID = {2}), Database 'Demo_Derby' not found.
+----------------------------------------------------------------
+Wed May 06 21:14:31 ICT 2020:
+Shutting down instance a816c00e-0171-ea51-6784-00000cd3e64f on database directory C:\Users\truonghdpk\Documents\Code mau Java\DataDb\sample with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@c387f44 
+Wed May 06 21:14:31 ICT 2020 Thread[DRDAConnThread_3,5,main] (DATABASE = sample), (DRDAID = {3}), Database 'sample' shutdown.
+----------------------------------------------------------------
+Wed May 06 21:15:09 ICT 2020:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance 9ac8804c-0171-ea51-6784-00000cd3e64f 
+on database directory C:\Users\truonghdpk\Documents\Code mau Java\DataDb\Demo_Derby with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@c387f44 
+Loaded from file:/C:/Users/truonghdpk/Documents/Code%20mau%20Java/db-derby-10.14.2.0-bin/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=14+36-1461
+user.dir=C:\Users\truonghdpk\Documents\Code mau Java\db-derby-10.14.2.0-bin
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=C:\Users\truonghdpk\Documents\Code mau Java\DataDb
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Wed May 06 21:15:16 ICT 2020:
+Shutting down instance 9ac8804c-0171-ea51-6784-00000cd3e64f on database directory C:\Users\truonghdpk\Documents\Code mau Java\DataDb\Demo_Derby with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@c387f44 
+Wed May 06 21:15:16 ICT 2020 Thread[DRDAConnThread_3,5,main] (DATABASE = Demo_Derby), (DRDAID = {5}), Database 'Demo_Derby' shutdown.
+----------------------------------------------------------------
+Wed May 06 21:15:28 ICT 2020:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance db4f80ed-0171-ea51-6784-00000cd3e64f 
+on database directory C:\Users\truonghdpk\Documents\Code mau Java\DataDb\Demo_Derby with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@c387f44 
+Loaded from file:/C:/Users/truonghdpk/Documents/Code%20mau%20Java/db-derby-10.14.2.0-bin/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=14+36-1461
+user.dir=C:\Users\truonghdpk\Documents\Code mau Java\db-derby-10.14.2.0-bin
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=C:\Users\truonghdpk\Documents\Code mau Java\DataDb
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Wed May 06 21:22:54 ICT 2020:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance b0ec4122-0171-ea51-6784-00000cd3e64f 
+on database directory C:\Users\truonghdpk\Documents\Code mau Java\DataDb\QLSinhVien with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@c387f44 
+Loaded from file:/C:/Users/truonghdpk/Documents/Code%20mau%20Java/db-derby-10.14.2.0-bin/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=14+36-1461
+user.dir=C:\Users\truonghdpk\Documents\Code mau Java\db-derby-10.14.2.0-bin
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=C:\Users\truonghdpk\Documents\Code mau Java\DataDb
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Wed May 06 21:23:02 ICT 2020:
+Shutting down instance b0ec4122-0171-ea51-6784-00000cd3e64f on database directory C:\Users\truonghdpk\Documents\Code mau Java\DataDb\QLSinhVien with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@c387f44 
+Wed May 06 21:23:02 ICT 2020 Thread[DRDAConnThread_4,5,main] (DATABASE = QLSinhVien), (DRDAID = {15}), Database 'QLSinhVien' shutdown.
+----------------------------------------------------------------
+Wed May 06 21:24:32 ICT 2020:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance d9c801c0-0171-ea51-6784-00000cd3e64f 
+on database directory C:\Users\truonghdpk\Documents\Code mau Java\DataDb\QLSinhVien with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@c387f44 
+Loaded from file:/C:/Users/truonghdpk/Documents/Code%20mau%20Java/db-derby-10.14.2.0-bin/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=14+36-1461
+user.dir=C:\Users\truonghdpk\Documents\Code mau Java\db-derby-10.14.2.0-bin
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=C:\Users\truonghdpk\Documents\Code mau Java\DataDb
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Wed May 06 22:06:21 ICT 2020: Shutting down Derby engine
